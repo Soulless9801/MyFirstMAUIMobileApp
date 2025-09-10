@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using MyFirstMAUIMobileApp.Models;
 
-namespace MyFirstMAUIMobileApp.ViewModel
+namespace MyFirstMAUIMobileApp.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {

@@ -1,4 +1,4 @@
-namespace MyFirstMAUIMobileApp.View;
+namespace MyFirstMAUIMobileApp.Views;
 
 public partial class MainPage : ContentPage
 {
