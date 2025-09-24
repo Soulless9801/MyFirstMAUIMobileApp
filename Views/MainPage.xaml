@@ -4,47 +4,13 @@
              x:Class="MyFirstMAUIMobileApp.Views.MainPage"
              Title="MainPage">
 
-    <ContentPage.Resources>
-        <Color x:Key="HeaderColor">#282828</Color>
-        <Color x:Key="PageBackground">#000000</Color>
-        <Color x:Key="ButtonBgColor">#282828</Color>
-        <Color x:Key="ButtonTextColor">#ffffff</Color>
+    <VerticalStackLayout Padding="24,16" 
+                         Spacing="24">
 
-        <!-- TODO: Create ButtonPrimary style with CornerRadius, HeightRequest, FontSize, etc. -->
-        <Style TargetType="Button" x:Key="ButtonPrimary">
-            <!-- TODO: your setters here -->
-            <Setter Property="BackgroundColor" Value="{StaticResource ButtonBgColor}"/>
-            <Setter Property="TextColor" Value="{StaticResource ButtonTextColor}"/>
-            <Setter Property="FontSize" Value="16"/>
-            <Setter Property="CornerRadius" Value="15"/>
-        </Style>
-    </ContentPage.Resources>
-
-    <VerticalStackLayout Padding="24,16"
-                         Spacing="24"
-                         BackgroundColor="{StaticResource PageBackground}"
-                         SemanticProperties.Description="Main menu page">
-
-        <!-- Header (students keep title but choose color/typography) -->
-        <Border Padding="16,20"
-                BackgroundColor="{StaticResource HeaderColor}"
-                StrokeThickness="0">
-            
-            <Label Text="Main Menu"
-                   TextColor="White"
-                   FontSize="28"
-                   SemanticProperties.HeadingLevel="Level1" />
-            
-        </Border>
-
-        <!-- BUTTON AREA: must use Grid.
-             TODO: Define RowDefinitions (3) and ColumnDefinitions (2).
-             TODO: Place 5 buttons using Grid.Row / Grid.Column.
-             TODO: Make 'SQL Lite' span both columns. -->
         <Grid RowSpacing="20"
               ColumnSpacing="20"
               Padding="0">
-            <!-- TODO: your grid rows/columns/buttons go here -->
+            
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
@@ -59,28 +25,28 @@
             <Button Text="Layouts" 
                     Grid.Row="0" 
                     Grid.Column="0" 
-                    Style="{StaticResource ButtonPrimary}"
-                    SemanticProperties.Description="Access Layouts"/>
+                    Style="{StaticResource ButtonPrimary}"/>
+
             <Button Text="Images" 
                     Grid.Row="0" 
                     Grid.Column="1" 
-                    Style="{StaticResource ButtonPrimary}"
-                    SemanticProperties.Description="Access Images"/>
+                    Style="{StaticResource ButtonPrimary}"/>
+
             <Button Text="Collections" 
                     Grid.Row="1" 
-                    Grid.Column="0" 
-                    Style="{StaticResource ButtonPrimary}"
-                    SemanticProperties.Description="Access Collections"/>
+                    Grid.Column="0"
+                    Style="{StaticResource ButtonPrimary}"/>
+            
             <Button Text="Controls" 
                     Grid.Row="1" 
-                    Grid.Column="1" 
-                    Style="{StaticResource ButtonPrimary}"
-                    SemanticProperties.Description="Access Controls"/>
+                    Grid.Column="1"
+                    Style="{StaticResource ButtonPrimary}"/>
+
             <Button Text="SQL Lite" 
                     Grid.Row="2" 
-                    Grid.ColumnSpan="2" 
-                    Style="{StaticResource ButtonPrimary}"
-                    SemanticProperties.Description="Access SQL Lite"/>
+                    Grid.ColumnSpan="2"
+                    Style="{StaticResource ButtonPrimary}"/>
+            
         </Grid>
 
     </VerticalStackLayout>
