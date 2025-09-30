@@ -14,7 +14,16 @@ namespace MyFirstMAUIMobileApp.ViewModels
 
         public string Layouts { get; set; } = TitleMain.Layouts;
 
+        public string Images { get; set; } = TitleMain.Images;
+
+        public string Collections { get; set; } = TitleMain.Collections;
+
+        public string Controls { get; set; } = TitleMain.Controls;
+
+        public string SQLite { get; set; } = TitleMain.SQLite;
+
         public ICommand OnLayoutsClicked { get; set; }
+
         public MainViewModel() 
         {
             Title = TitleMain.Title;

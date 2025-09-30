@@ -21,22 +21,22 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Text="Stack Layout" 
+            <Button Text="{Binding StackLayout}"
                     Grid.Row="0" 
                     Grid.Column="0" 
                     Style="{StaticResource ButtonPrimary}"/>
 
-            <Button Text="Vertical Layout" 
+            <Button Text="{Binding VerticalLayout}"
                     Grid.Row="0" 
                     Grid.Column="1" 
                     Style="{StaticResource ButtonPrimary}"/>
 
-            <Button Text="Horizontal Layout" 
+            <Button Text="{Binding HorizontalLayout}"
                     Grid.Row="1" 
                     Grid.Column="0"
                     Style="{StaticResource ButtonPrimary}"/>
 
-            <Button Text="Absolute Layout" 
+            <Button Text="{Binding AbsoluteLayout}"
                     Grid.Row="1" 
                     Grid.Column="1"
                     Style="{StaticResource ButtonPrimary}"/>
