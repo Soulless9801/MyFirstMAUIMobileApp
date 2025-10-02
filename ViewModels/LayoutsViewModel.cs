@@ -1,25 +1,30 @@
 ﻿using MyFirstMAUIMobileApp.Models.Titles;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 
 namespace MyFirstMAUIMobileApp.ViewModels
 {
-    public class LayoutsViewModel : BaseViewModel
+    public partial class LayoutsViewModel : ObservableObject
     {
-        public string StackLayout { get; set; } = TitleLayouts.StackLayout;
 
-        public string VerticalLayout { get; set; } = TitleLayouts.VerticalLayout;
+        [ObservableProperty]
+        private string title = TitleLayouts.Title;
 
-        public string HorizontalLayout { get; set; } = TitleLayouts.HorizontalLayout;
+        [ObservableProperty]
+        private string stackLayout = TitleLayouts.StackLayout;
 
-        public string AbsoluteLayout { get; set; } = TitleLayouts.AbsoluteLayout;
+        [ObservableProperty]
+        private string verticalLayout = TitleLayouts.VerticalLayout;
+
+        [ObservableProperty]
+        private string horizontalLayout = TitleLayouts.HorizontalLayout;
+
+        [ObservableProperty]
+        private string absoluteLayout = TitleLayouts.AbsoluteLayout;
 
         public LayoutsViewModel()
         {
-            Title = TitleLayouts.Title;
+
         }
     }
 }
