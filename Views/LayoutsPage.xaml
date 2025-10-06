@@ -14,6 +14,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -21,25 +22,31 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Text="{Binding StackLayout}"
+            <Button Text="{Binding StackLayoutButtonText}"
                     Grid.Row="0" 
                     Grid.Column="0" 
-                    Style="{StaticResource ButtonPrimary}"/>
+                    Style="{StaticResource ButtonLayouts}"/>
 
-            <Button Text="{Binding VerticalLayout}"
+            <Button Text="{Binding VerticalLayoutButtonText}"
                     Grid.Row="0" 
-                    Grid.Column="1" 
-                    Style="{StaticResource ButtonPrimary}"/>
+                    Grid.Column="1"
+                    Style="{StaticResource ButtonLayouts}"/>
 
-            <Button Text="{Binding HorizontalLayout}"
+            <Button Text="{Binding HorizontalLayoutButtonText}"
                     Grid.Row="1" 
                     Grid.Column="0"
-                    Style="{StaticResource ButtonPrimary}"/>
+                    Style="{StaticResource ButtonLayouts}"/>
 
-            <Button Text="{Binding AbsoluteLayout}"
+            <Button Text="{Binding AbsoluteLayoutButtonText}"
                     Grid.Row="1" 
                     Grid.Column="1"
-                    Style="{StaticResource ButtonPrimary}"/>
+                    Style="{StaticResource ButtonLayouts}"/>
+
+            <Button Text="{Binding FlexLayoutButtonText}"
+                    Grid.Row="2" 
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Style="{StaticResource ButtonLayouts}"/>
 
         </Grid>
 

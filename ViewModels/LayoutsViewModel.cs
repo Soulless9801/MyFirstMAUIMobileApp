@@ -1,4 +1,5 @@
 ﻿using MyFirstMAUIMobileApp.Models.Titles;
+using MyFirstMAUIMobileApp.Views;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
@@ -11,16 +12,19 @@ namespace MyFirstMAUIMobileApp.ViewModels
         private string title = TitleLayouts.Title;
 
         [ObservableProperty]
-        private string stackLayout = TitleLayouts.StackLayout;
+        private string stackLayoutButtonText = TitleLayouts.StackLayoutButtonText;
 
         [ObservableProperty]
-        private string verticalLayout = TitleLayouts.VerticalLayout;
+        private string verticalLayoutButtonText = TitleLayouts.VerticalLayoutButtonText;
 
         [ObservableProperty]
-        private string horizontalLayout = TitleLayouts.HorizontalLayout;
+        private string horizontalLayoutButtonText = TitleLayouts.HorizontalLayoutButtonText;
 
         [ObservableProperty]
-        private string absoluteLayout = TitleLayouts.AbsoluteLayout;
+        private string absoluteLayoutButtonText = TitleLayouts.AbsoluteLayoutButtonText;
+
+        [ObservableProperty]
+        private string flexLayoutButtonText = TitleLayouts.FlexLayoutButtonText;
 
         public LayoutsViewModel()
         {

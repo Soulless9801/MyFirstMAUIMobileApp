@@ -12,22 +12,22 @@ namespace MyFirstMAUIMobileApp.ViewModels
         private string title = TitleMain.Title;
 
         [ObservableProperty]
-        private string layouts = TitleMain.Layouts;
+        private string layoutsButtonText = TitleMain.LayoutsButtonText;
 
         [ObservableProperty]
-        private string images= TitleMain.Images;
+        private string imagesButtonText = TitleMain.ImagesButtonText;
 
         [ObservableProperty]
-        private string collections = TitleMain.Collections;
+        private string collectionsButtonText = TitleMain.CollectionsButtonText;
 
         [ObservableProperty]
-        private string controls = TitleMain.Controls;
+        private string controlsButtonText = TitleMain.ControlsButtonText;
 
         [ObservableProperty]
-        private string sQLite = TitleMain.SQLite;
+        private string sQLiteButtonText = TitleMain.SQLiteButtonText;
 
         [RelayCommand]
-        private async Task LayoutsClicked()
+        private async Task LayoutsButtonClicked()
         {
             await Shell.Current.GoToAsync(nameof(LayoutsPage));
         }

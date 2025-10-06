@@ -22,31 +22,31 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             
-            <Button Text="{Binding Layouts}"
-                    Command="{Binding LayoutsClickedCommand}"
+            <Button Text="{Binding LayoutsButtonText}"
+                    Command="{Binding LayoutsButtonClickedCommand}"
                     Grid.Row="0" 
                     Grid.Column="0" 
-                    Style="{StaticResource ButtonPrimary}"/>
+                    Style="{StaticResource ButtonMain}"/>
 
-            <Button Text="{Binding Images}" 
+            <Button Text="{Binding ImagesButtonText}" 
                     Grid.Row="0" 
                     Grid.Column="1" 
-                    Style="{StaticResource ButtonPrimary}"/>
+                    Style="{StaticResource ButtonMain}"/>
 
-            <Button Text="{Binding Collections}" 
+            <Button Text="{Binding CollectionsButtonText}" 
                     Grid.Row="1" 
                     Grid.Column="0"
-                    Style="{StaticResource ButtonPrimary}"/>
+                    Style="{StaticResource ButtonMain}"/>
 
-            <Button Text="{Binding Controls}" 
+            <Button Text="{Binding ControlsButtonText}" 
                     Grid.Row="1" 
                     Grid.Column="1"
-                    Style="{StaticResource ButtonPrimary}"/>
+                    Style="{StaticResource ButtonMain}"/>
 
-            <Button Text="{Binding SQLite}" 
+            <Button Text="{Binding SQLiteButtonText}" 
                     Grid.Row="2" 
                     Grid.ColumnSpan="2"
-                    Style="{StaticResource ButtonPrimary}"/>
+                    Style="{StaticResource ButtonMain}"/>
             
         </Grid>
 

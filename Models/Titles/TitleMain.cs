@@ -1,24 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MyFirstMAUIMobileApp.Models.Titles
+﻿namespace MyFirstMAUIMobileApp.Models.Titles
 {
     public static class TitleMain
     {
         public static string Title { get; } = "Main Menu";
 
-        public static string Layouts { get; } = "Layouts";
+        public static string LayoutsButtonText { get; } = "Layouts";
 
-        public static string Images { get; } = "Images";
+        public static string ImagesButtonText { get; } = "Images";
 
-        public static string Collections { get; } = "Collections";
+        public static string CollectionsButtonText { get; } = "Collections";
 
-        public static string Controls { get; } = "Controls";
+        public static string ControlsButtonText { get; } = "Controls";
 
-        public static string SQLite { get; } = "SQL Lite";
+        public static string SQLiteButtonText { get; } = "SQL Lite";
 
     }
 }
