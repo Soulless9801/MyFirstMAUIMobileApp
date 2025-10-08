@@ -23,16 +23,17 @@
             </Grid.ColumnDefinitions>
 
             <Button Text="{Binding StackLayoutButtonText}"
+                    Command="{Binding StackLayoutButtonClickedCommand}"
                     Grid.Row="0" 
                     Grid.Column="0" 
                     Style="{StaticResource ButtonLayouts}"/>
 
-            <Button Text="{Binding VerticalLayoutButtonText}"
+            <Button Text="{Binding VerticalStackLayoutButtonText}"
                     Grid.Row="0" 
                     Grid.Column="1"
                     Style="{StaticResource ButtonLayouts}"/>
 
-            <Button Text="{Binding HorizontalLayoutButtonText}"
+            <Button Text="{Binding HorizontalStackLayoutButtonText}"
                     Grid.Row="1" 
                     Grid.Column="0"
                     Style="{StaticResource ButtonLayouts}"/>

@@ -6,9 +6,9 @@
 
         public static string StackLayoutButtonText { get; } = "Stack Layout";
 
-        public static string HorizontalLayoutButtonText { get; } = "Horizontal Layout";
+        public static string HorizontalStackLayoutButtonText { get; } = "Horizontal Stack Layout";
 
-        public static string VerticalLayoutButtonText { get; } = "Vertical Layout";
+        public static string VerticalStackLayoutButtonText { get; } = "Vertical Stack Layout";
 
         public static string AbsoluteLayoutButtonText { get; } = "Absolute Layout";
 

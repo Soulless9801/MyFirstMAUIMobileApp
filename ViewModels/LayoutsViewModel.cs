@@ -15,16 +15,22 @@ namespace MyFirstMAUIMobileApp.ViewModels
         private string stackLayoutButtonText = TitleLayouts.StackLayoutButtonText;
 
         [ObservableProperty]
-        private string verticalLayoutButtonText = TitleLayouts.VerticalLayoutButtonText;
+        private string verticalStackLayoutButtonText = TitleLayouts.VerticalStackLayoutButtonText;
 
         [ObservableProperty]
-        private string horizontalLayoutButtonText = TitleLayouts.HorizontalLayoutButtonText;
+        private string horizontalStackLayoutButtonText = TitleLayouts.HorizontalStackLayoutButtonText;
 
         [ObservableProperty]
         private string absoluteLayoutButtonText = TitleLayouts.AbsoluteLayoutButtonText;
 
         [ObservableProperty]
         private string flexLayoutButtonText = TitleLayouts.FlexLayoutButtonText;
+
+        [RelayCommand]
+        private async Task StackLayoutButtonClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(LayoutStackPage));
+        }
 
         public LayoutsViewModel()
         {
