@@ -10,7 +10,7 @@
             
             <BoxView WidthRequest="150"
                      HeightRequest="150"
-                     Color="#add8e6" />    
+                     Color="LightBlue" />    
             
         </StackLayout>
 
@@ -19,7 +19,7 @@
             
             <BoxView WidthRequest="200"
                      HeightRequest="100"
-                     Color="#90ee90" />
+                     Color="LightGreen" />
             
         </StackLayout>
 
@@ -28,7 +28,7 @@
             
             <BoxView WidthRequest="100"
                      HeightRequest="200"
-                     Color="#ffb6c1" />
+                     Color="LightCoral" />
             
         </StackLayout>
         

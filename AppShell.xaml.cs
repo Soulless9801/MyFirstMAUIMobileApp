@@ -14,6 +14,7 @@ namespace MyFirstMAUIMobileApp
         {
             Routing.RegisterRoute(nameof(LayoutsPage), typeof(LayoutsPage));
             Routing.RegisterRoute(nameof(LayoutStackPage), typeof(LayoutStackPage));
+            Routing.RegisterRoute(nameof(LayoutVerticalStackPage), typeof(LayoutVerticalStackPage));
         }
     }
 }

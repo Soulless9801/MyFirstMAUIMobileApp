@@ -29,6 +29,7 @@
                     Style="{StaticResource ButtonLayouts}"/>
 
             <Button Text="{Binding VerticalStackLayoutButtonText}"
+                    Command="{Binding VerticalStackLayoutButtonClickedCommand}"
                     Grid.Row="0" 
                     Grid.Column="1"
                     Style="{StaticResource ButtonLayouts}"/>
