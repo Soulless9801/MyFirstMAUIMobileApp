@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMAUIMobileApp.Views.LayoutVerticalStackPage"
              Title="{Binding Title}">
-    
+
     <VerticalStackLayout>
 
         <BoxView WidthRequest="100"
@@ -29,7 +29,5 @@
                      Color="Purple" />
 
         </Grid>
-        
     </VerticalStackLayout>
-    
 </ContentPage>

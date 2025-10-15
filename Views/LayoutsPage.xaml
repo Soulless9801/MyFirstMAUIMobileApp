@@ -35,11 +35,13 @@
                     Style="{StaticResource ButtonLayouts}"/>
 
             <Button Text="{Binding HorizontalStackLayoutButtonText}"
+                    Command="{Binding HorizontalStackLayoutButtonClickedCommand}"
                     Grid.Row="1" 
                     Grid.Column="0"
                     Style="{StaticResource ButtonLayouts}"/>
 
             <Button Text="{Binding AbsoluteLayoutButtonText}"
+                    Command="{Binding AbsoluteLayoutButtonClickedCommand}"
                     Grid.Row="1" 
                     Grid.Column="1"
                     Style="{StaticResource ButtonLayouts}"/>
@@ -49,9 +51,6 @@
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Style="{StaticResource ButtonLayouts}"/>
-
         </Grid>
-
     </VerticalStackLayout>
-
 </ContentPage>

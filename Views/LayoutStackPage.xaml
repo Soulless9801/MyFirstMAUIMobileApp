@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMAUIMobileApp.Views.LayoutStackPage"
              Title="{Binding Title}">
+    
     <StackLayout>
         
         <StackLayout VerticalOptions="CenterAndExpand"
@@ -25,12 +26,11 @@
 
         <StackLayout VerticalOptions="EndAndExpand"
                      HorizontalOptions="Start" >
-            
+
             <BoxView WidthRequest="100"
                      HeightRequest="200"
                      Color="LightCoral" />
-            
+
         </StackLayout>
-        
     </StackLayout>
 </ContentPage>

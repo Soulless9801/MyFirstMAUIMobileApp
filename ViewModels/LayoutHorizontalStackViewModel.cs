@@ -3,13 +3,13 @@ using MyFirstMAUIMobileApp.Models.Titles;
 
 namespace MyFirstMAUIMobileApp.ViewModels
 {
-    public partial class LayoutVerticalStackViewModel : ObservableObject
+    public partial class LayoutHorizontalStackViewModel : ObservableObject
     {
 
         [ObservableProperty]
-        private string title =  TitleLayoutVerticalStack.Title;
+        private string title = TitleLayoutHorizontalStack.Title;
 
-        public LayoutVerticalStackViewModel()
+        public LayoutHorizontalStackViewModel()
         {
 
         }

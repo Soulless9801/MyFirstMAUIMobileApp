@@ -1,6 +1,6 @@
 ﻿namespace MyFirstMAUIMobileApp.Models.Titles
 {
-    class TitleLayouts
+    public static class TitleLayouts
     {
         public static string Title { get; } = "Layouts Menu";
 
