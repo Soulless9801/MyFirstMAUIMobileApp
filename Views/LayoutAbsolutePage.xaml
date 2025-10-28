@@ -9,126 +9,138 @@
         <Label Text="Absolute!"
                FontSize="24"
                AbsoluteLayout.LayoutBounds="0.55, 0.05, 0.3, 0.06"
-               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+               AbsoluteLayout.LayoutFlags="All"/>
 
-        <BoxView Color="#008000"
+        <BoxView Color="DarkGreen"
                  AbsoluteLayout.LayoutBounds="0.05, 0.15, 0.2, 0.06"
-                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+                 AbsoluteLayout.LayoutFlags="All"/>
 
         <Label Text="01"
                FontSize="24"
-               TextColor="White"
-               AbsoluteLayout.LayoutBounds="0.135, 0.15, 0.2, 0.06"
-               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+               TextColor="Snow"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.05, 0.15, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="All"/>
 
-        <BoxView Color="#dc143d" 
+        <BoxView Color="IndianRed" 
                  AbsoluteLayout.LayoutBounds="0.35, 0.15, 0.2, 0.06"
-                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+                 AbsoluteLayout.LayoutFlags="All"/>
 
         <Label Text="02"
                FontSize="24"
-               TextColor="White"
-               AbsoluteLayout.LayoutBounds="0.435, 0.15, 0.2, 0.06"
-               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+               TextColor="Bisque"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.35, 0.15, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="All"/>
 
-        <BoxView Color="#ffe4c4" 
+        <BoxView Color="Beige" 
                  AbsoluteLayout.LayoutBounds="0.65, 0.15, 0.2, 0.06"
-                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+                 AbsoluteLayout.LayoutFlags="All"/>
 
         <Label Text="03"
                FontSize="24"
                TextColor="Maroon"
-               AbsoluteLayout.LayoutBounds="0.735, 0.15, 0.2, 0.06"
-               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.65, 0.15, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="All"/>
 
-        <BoxView Color="#c3e9fb" 
+        <BoxView Color="SkyBlue" 
                  AbsoluteLayout.LayoutBounds="0.95, 0.15, 0.2, 0.06"
-                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+                 AbsoluteLayout.LayoutFlags="All"/>
 
         <Label Text="04"
                FontSize="24"
                TextColor="Purple"
-               AbsoluteLayout.LayoutBounds="1.035, 0.15, 0.2, 0.06"
-               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.95, 0.15, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="All"/>
 
-        <BoxView Color="#7fffd4" 
+        <BoxView Color="LightSteelBlue" 
                  AbsoluteLayout.LayoutBounds="0.05, 0.25, 0.2, 0.06"
-                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+                 AbsoluteLayout.LayoutFlags="All"/>
 
         <Label Text="05"
                FontSize="24"
                TextColor="Green"
-               AbsoluteLayout.LayoutBounds="0.135, 0.25, 0.2, 0.06"
-               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.05, 0.25, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="All"/>
 
-        <BoxView Color="#a52b2b" 
+        <BoxView Color="DarkRed" 
                  AbsoluteLayout.LayoutBounds="0.35, 0.25, 0.2, 0.06"
-                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+                 AbsoluteLayout.LayoutFlags="All"/>
 
         <Label Text="06"
                FontSize="24"
-               TextColor="White"
-               AbsoluteLayout.LayoutBounds="0.435, 0.25, 0.2, 0.06"
-               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+               TextColor="LightGray"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.35, 0.25, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="All"/>
 
-        <BoxView Color="#5f9ea0" 
+        <BoxView Color="DodgerBlue" 
                  AbsoluteLayout.LayoutBounds="0.65, 0.25, 0.2, 0.06"
-                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+                 AbsoluteLayout.LayoutFlags="All"/>
 
         <Label Text="07"
                FontSize="24"
-               TextColor="White"
-               AbsoluteLayout.LayoutBounds="0.735, 0.25, 0.2, 0.06"
-               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+               TextColor="Ivory"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.65, 0.25, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="All"/>
 
-        <BoxView Color="#dda0dd" 
+        <BoxView Color="LightPink" 
                  AbsoluteLayout.LayoutBounds="0.95, 0.25, 0.2, 0.06"
-                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+                 AbsoluteLayout.LayoutFlags="All"/>
 
         <Label Text="08"
                FontSize="24"
                TextColor="Yellow"
-               AbsoluteLayout.LayoutBounds="1.035, 0.25, 0.2, 0.06"
-               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.95, 0.25, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="All"/>
 
-        <BoxView Color="#9acd31" 
+        <BoxView Color="LimeGreen" 
                  AbsoluteLayout.LayoutBounds="0.05, 0.35, 0.2, 0.06"
-                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+                 AbsoluteLayout.LayoutFlags="All"/>
 
         <Label Text="09"
                FontSize="24"
-               TextColor="Red"
-               AbsoluteLayout.LayoutBounds="0.135, 0.35, 0.2, 0.06"
-               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+               TextColor="Coral"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.05, 0.35, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="All"/>
 
-        <BoxView Color="#3edfcf" 
+        <BoxView Color="CadetBlue" 
                  AbsoluteLayout.LayoutBounds="0.35, 0.35, 0.2, 0.06"
-                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+                 AbsoluteLayout.LayoutFlags="All"/>
 
         <Label Text="10"
                FontSize="24"
                TextColor="DarkOrange"
-               AbsoluteLayout.LayoutBounds="0.435, 0.35, 0.2, 0.06"
-               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.35, 0.35, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="All"/>
 
-        <BoxView Color="#556b2e" 
+        <BoxView Color="ForestGreen" 
                  AbsoluteLayout.LayoutBounds="0.65, 0.35, 0.2, 0.06"
-                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+                 AbsoluteLayout.LayoutFlags="All"/>
 
         <Label Text="11"
                FontSize="24"
-               TextColor="SkyBlue"
-               AbsoluteLayout.LayoutBounds="0.735, 0.35, 0.2, 0.06"
-               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+               TextColor="LightBlue"
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.65, 0.35, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="All"/>
 
-        <BoxView Color="#4682b4" 
+        <BoxView Color="SteelBlue" 
                  AbsoluteLayout.LayoutBounds="0.95, 0.35, 0.2, 0.06"
-                 AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+                 AbsoluteLayout.LayoutFlags="All"/>
 
         <Label Text="12"
                FontSize="24"
                TextColor="Cyan"
-               AbsoluteLayout.LayoutBounds="1.035, 0.35, 0.2, 0.06"
-               AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional, HeightProportional"/>
+               HorizontalTextAlignment="Center"
+               AbsoluteLayout.LayoutBounds="0.95, 0.35, 0.2, 0.06"
+               AbsoluteLayout.LayoutFlags="All"/>
     </AbsoluteLayout>
 </ContentPage>
