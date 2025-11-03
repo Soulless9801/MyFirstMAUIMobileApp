@@ -3,4 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMAUIMobileApp.Views.LayoutFlexPage"
              Title="{Binding Title}">
+
+    <FlexLayout Direction="Row"
+                JustifyContent="SpaceEvenly"
+                AlignItems="Center">
+
+        <VerticalStackLayout>
+            
+            <BoxView Color="Red"
+                     HeightRequest="50"
+                     WidthRequest="50" />   
+            
+            <Label Text="Red" />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            
+            <BoxView Color="Green"
+                     HeightRequest="50"
+                     WidthRequest="50" />
+            
+            <Label Text="Green" />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            
+            <BoxView Color="Blue"
+                     HeightRequest="50"
+                     WidthRequest="50" />
+            
+            <Label Text="Blue" />
+        </VerticalStackLayout>
+    </FlexLayout>
+    
 </ContentPage>
