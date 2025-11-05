@@ -22,36 +22,37 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Text="{Binding StackLayoutButtonText}"
-                    Command="{Binding StackLayoutButtonClickedCommand}"
-                    Grid.Row="0" 
+            <Button Grid.Row="0" 
                     Grid.Column="0" 
-                    Style="{StaticResource ButtonLayouts}"/>
+                    Text="{Binding StackLayoutButtonText}"
+                    Style="{StaticResource ButtonLayouts}"
+                    Command="{Binding StackLayoutButtonClickedCommand}" />
 
-            <Button Text="{Binding VerticalStackLayoutButtonText}"
-                    Command="{Binding VerticalStackLayoutButtonClickedCommand}"
-                    Grid.Row="0" 
+            <Button Grid.Row="0" 
                     Grid.Column="1"
-                    Style="{StaticResource ButtonLayouts}"/>
+                    Text="{Binding VerticalStackLayoutButtonText}"
+                    Style="{StaticResource ButtonLayouts}"
+                    Command="{Binding VerticalStackLayoutButtonClickedCommand}" />
 
-            <Button Text="{Binding HorizontalStackLayoutButtonText}"
-                    Command="{Binding HorizontalStackLayoutButtonClickedCommand}"
-                    Grid.Row="1" 
+            <Button Grid.Row="1" 
                     Grid.Column="0"
-                    Style="{StaticResource ButtonLayouts}"/>
+                    Text="{Binding HorizontalStackLayoutButtonText}"
+                    Style="{StaticResource ButtonLayouts}"
+                    Command="{Binding HorizontalStackLayoutButtonClickedCommand}" />
 
-            <Button Text="{Binding AbsoluteLayoutButtonText}"
-                    Command="{Binding AbsoluteLayoutButtonClickedCommand}"
-                    Grid.Row="1" 
+
+            <Button Grid.Row="1" 
                     Grid.Column="1"
-                    Style="{StaticResource ButtonLayouts}"/>
+                    Text="{Binding AbsoluteLayoutButtonText}"
+                    Style="{StaticResource ButtonLayouts}"
+                    Command="{Binding AbsoluteLayoutButtonClickedCommand}"/>
 
-            <Button Text="{Binding FlexLayoutButtonText}"
-                    Command="{Binding FlexLayoutButtonClickedCommand}"
-                    Grid.Row="2" 
+            <Button Grid.Row="2" 
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    Style="{StaticResource ButtonLayouts}"/>
+                    Text="{Binding FlexLayoutButtonText}"
+                    Style="{StaticResource ButtonLayouts}"
+                    Command="{Binding FlexLayoutButtonClickedCommand}" />
         </Grid>
     </VerticalStackLayout>
 </ContentPage>

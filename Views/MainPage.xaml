@@ -22,31 +22,32 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Text="{Binding LayoutsButtonText}"
-                    Command="{Binding LayoutsButtonClickedCommand}"
-                    Grid.Row="0" 
+            <Button Grid.Row="0" 
                     Grid.Column="0" 
-                    Style="{StaticResource ButtonMain}"/>
+                    Text="{Binding LayoutsButtonText}"
+                    Style="{StaticResource ButtonMain}"
+                    Command="{Binding LayoutsButtonClickedCommand}" />
 
-            <Button Text="{Binding ImagesButtonText}" 
-                    Grid.Row="0" 
+            <Button Grid.Row="0" 
                     Grid.Column="1" 
-                    Style="{StaticResource ButtonMain}"/>
+                    Text="{Binding ImagesButtonText}" 
+                    Style="{StaticResource ButtonMain}"
+                    Command="{Binding ImagesButtonClickedCommand}"/>
 
-            <Button Text="{Binding CollectionsButtonText}" 
-                    Grid.Row="1" 
+            <Button Grid.Row="1" 
                     Grid.Column="0"
-                    Style="{StaticResource ButtonMain}"/>
+                    Text="{Binding CollectionsButtonText}" 
+                    Style="{StaticResource ButtonMain}" />
 
-            <Button Text="{Binding ControlsButtonText}" 
-                    Grid.Row="1" 
+            <Button Grid.Row="1" 
                     Grid.Column="1"
-                    Style="{StaticResource ButtonMain}"/>
+                    Text="{Binding ControlsButtonText}" 
+                    Style="{StaticResource ButtonMain}" />
 
-            <Button Text="{Binding SQLiteButtonText}" 
-                    Grid.Row="2" 
+            <Button Grid.Row="2" 
                     Grid.ColumnSpan="2"
-                    Style="{StaticResource ButtonMain}"/>
+                    Text="{Binding SQLiteButtonText}" 
+                    Style="{StaticResource ButtonMain}" />
 
         </Grid>
     </VerticalStackLayout>

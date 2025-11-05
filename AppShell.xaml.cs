@@ -12,12 +12,19 @@ namespace MyFirstMAUIMobileApp
         }
         private void RegisterRoutes()
         {
+            // Layouts
             Routing.RegisterRoute(nameof(LayoutsPage), typeof(LayoutsPage));
             Routing.RegisterRoute(nameof(LayoutStackPage), typeof(LayoutStackPage));
             Routing.RegisterRoute(nameof(LayoutVerticalStackPage), typeof(LayoutVerticalStackPage));
             Routing.RegisterRoute(nameof(LayoutHorizontalStackPage), typeof(LayoutHorizontalStackPage));
             Routing.RegisterRoute(nameof(LayoutAbsolutePage), typeof(LayoutAbsolutePage));
             Routing.RegisterRoute(nameof(LayoutFlexPage), typeof(LayoutFlexPage));
+
+            //Images
+            Routing.RegisterRoute(nameof(ImagesPage), typeof(ImagesPage));
+            Routing.RegisterRoute(nameof(ImagesURIPage), typeof(ImagesURIPage));
+            Routing.RegisterRoute(nameof(ImagesEmbeddedPage), typeof(ImagesEmbeddedPage));
+            Routing.RegisterRoute(nameof(ImagesActivityIndicatorPage), typeof(ImagesActivityIndicatorPage));
         }
     }
 }
