@@ -10,6 +10,12 @@ namespace MyFirstMAUIMobileApp.ViewModels
 
         public string Title => TitleImages.Title;
 
+        public string URIImagesButtonText => TitleImages.URIImagesButtonText;
+
+        public string EmbeddedImagesButtonText => TitleImages.EmbeddedImagesButtonText;
+
+        public string ActivityIndicatorButtonText => TitleImages.ActivityIndicatorButtonText;
+
         [RelayCommand]
         private async Task URIImagesButtonClicked()
         {

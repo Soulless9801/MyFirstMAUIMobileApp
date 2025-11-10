@@ -8,6 +8,8 @@ namespace MyFirstMAUIMobileApp.ViewModels
 
         public string Title => TitleImagesEmbedded.Title;
 
+        public ImageSource ImageSource => "phoenix.jpg";
+
         public ImagesEmbeddedViewModel()
         {
 
