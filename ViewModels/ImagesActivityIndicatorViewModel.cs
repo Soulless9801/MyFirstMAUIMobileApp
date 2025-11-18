@@ -1,6 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using MyFirstMAUIMobileApp.Models.Titles;
-//using Microsoft.Maui.Controls;
 
 namespace MyFirstMAUIMobileApp.ViewModels
 {
@@ -38,7 +37,7 @@ namespace MyFirstMAUIMobileApp.ViewModels
             }
             finally
             {
-                isLoading = false;
+                IsLoading = false;
             }
         }
 

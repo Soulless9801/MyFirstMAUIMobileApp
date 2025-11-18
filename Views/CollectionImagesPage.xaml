@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyFirstMAUIMobileApp.Models.Entities"
+             x:Class="MyFirstMAUIMobileApp.Views.CollectionImagesPage"
+             Title="{Binding Title}">
+
+    <VerticalStackLayout Padding="20"
+                         Spacing="10">
+
+        <CollectionView ItemsSource="{Binding GOGActorsCollection}">
+
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" />
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="local:GOGActor">
+                    <Grid ColumnSpacing="20" 
+                          Padding="10" >
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Grid.Row="0"
+                               Grid.Column="0"
+                               Source="{Binding ImageURL}"
+                               VerticalOptions="Center"
+                               Aspect="AspectFit" />
+
+                        <VerticalStackLayout Grid.Row="0"
+                                             Grid.Column="1"
+                                             Grid.ColumnSpan="2">
+                            
+                            <Label Text="{Binding ActorName}" 
+                                   FontAttributes="Bold" 
+                                   TextColor="Blue"/>
+
+                            <Label Text="{Binding CharacterName}" />
+
+                        </VerticalStackLayout>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>
