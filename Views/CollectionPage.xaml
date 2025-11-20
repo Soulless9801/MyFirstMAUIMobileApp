@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MyFirstMAUIMobileApp.Models.Entities"
+             x:Class="MyFirstMAUIMobileApp.Views.CollectionPage"
+             Title="{Binding Title}">
+    
+    <VerticalStackLayout Padding="20"
+                         Spacing="10">
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+            
+            <Label Text="Movies"
+                   FontSize="50"
+                   FontAttributes="Bold, Italic"
+                   TextColor="CadetBlue"
+                   WidthRequest="170" />
+        </HorizontalStackLayout>
+
+        <BoxView HeightRequest="2"
+                 BackgroundColor="LightGray" />
+
+        <CollectionView ItemsSource="{Binding MarvelMoviesCollection}">
+
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" />
+            </CollectionView.ItemsLayout>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="local:MarvelMovies">
+                    <Grid Padding="2" >
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Text="{Binding NameofMovie}" 
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Start"
+                                   FontSize="Medium" />
+
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

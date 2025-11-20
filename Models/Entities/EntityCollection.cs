@@ -1,5 +1,4 @@
-﻿//Ensure your NAMESPACE is correct
-namespace MyFirstMAUIMobileApp.Models.Entities;
+﻿namespace MyFirstMAUIMobileApp.Models.Entities;
 
 public class MarvelMovies
 {

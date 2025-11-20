@@ -16,37 +16,46 @@
 
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="local:GOGActor">
-                    <Grid ColumnSpacing="20" 
-                          Padding="10" >
+                    <VerticalStackLayout>
+                        
+                        <Grid ColumnSpacing="20" 
+                              Padding="0, 10" >
 
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*"/>
-                        </Grid.RowDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
 
-                        <Image Grid.Row="0"
-                               Grid.Column="0"
-                               Source="{Binding ImageURL}"
-                               VerticalOptions="Center"
-                               Aspect="AspectFit" />
+                            <Image Grid.Row="0"
+                                   Grid.Column="0"
+                                   Source="{Binding ImageURL}"
+                                   Aspect="AspectFit"/>
 
-                        <VerticalStackLayout Grid.Row="0"
-                                             Grid.Column="1"
-                                             Grid.ColumnSpan="2">
-                            
-                            <Label Text="{Binding ActorName}" 
-                                   FontAttributes="Bold" 
-                                   TextColor="Blue"/>
+                            <VerticalStackLayout Grid.Row="0"
+                                                 Grid.Column="1"
+                                                 Grid.ColumnSpan="2">
 
-                            <Label Text="{Binding CharacterName}" />
+                                <Label Text="{Binding ActorName}" 
+                                       FontAttributes="Bold" 
+                                       TextColor="CadetBlue" />
 
-                        </VerticalStackLayout>
-                    </Grid>
+                                <Label Text="{Binding CharacterName}" 
+                                       FontAttributes="Bold, Italic"
+                                       TextColor="Blue" />
+
+                            </VerticalStackLayout>
+
+                        </Grid>
+
+                        <BoxView HeightRequest="2"
+                                 BackgroundColor="LightGray" />
+
+                    </VerticalStackLayout>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
