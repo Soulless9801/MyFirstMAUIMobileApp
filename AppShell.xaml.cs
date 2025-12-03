@@ -32,6 +32,8 @@ namespace MyFirstMAUIMobileApp
             Routing.RegisterRoute(nameof(CollectionImagesPage), typeof(CollectionImagesPage));
             Routing.RegisterRoute(nameof(CollectionButtonsPage), typeof(CollectionButtonsPage));
             Routing.RegisterRoute(nameof(CollectionIconsPage), typeof(CollectionIconsPage));
+            Routing.RegisterRoute(nameof(CollectionAddPage), typeof(CollectionAddPage));
+            Routing.RegisterRoute(nameof(CollectionEditPage), typeof(CollectionEditPage));
         }
     }
 }

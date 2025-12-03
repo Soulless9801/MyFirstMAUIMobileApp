@@ -20,7 +20,7 @@ public class GOGActor
         ImageURL = imgURL;
     }
 
-    public static List<GOGActor> GetMovies() => new List<GOGActor>
+    public static List<GOGActor> GetActors() => new List<GOGActor>
     {
         new GOGActor("Chris Pratt", "Starlord", "starlord.jpg"),
         new GOGActor("Zoe Saldana", "Gamora", "gamora.jpg"),

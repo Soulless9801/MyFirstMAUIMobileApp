@@ -17,11 +17,11 @@ public partial class CollectionImagesViewModel : ObservableObject
 
     public CollectionImagesViewModel()
     {
-        _gogactors = GOGActor.GetMovies();
-        LoadMovies();
+        _gogactors = GOGActor.GetActors();
+        LoadActors();
     }
 
-    private void LoadMovies()
+    private void LoadActors()
     {
         try
         {

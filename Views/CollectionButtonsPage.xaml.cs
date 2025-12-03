@@ -4,10 +4,10 @@ namespace MyFirstMAUIMobileApp.Views;
 
 public partial class CollectionButtonsPage : ContentPage
 {
-	public CollectionButtonsPage()
+	public CollectionButtonsPage(CollectionButtonsViewModel vm)
 	{
 		InitializeComponent();
 
-		BindingContext = new CollectionButtonsViewModel();
+		BindingContext = vm;
     }
 }

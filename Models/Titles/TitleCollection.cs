@@ -3,6 +3,6 @@
     public static class TitleCollection
     {
 
-        public static string Title { get; set; } = "Collection";
+        public static string Title { get; set; } = "Marvel Movies";
     }
 }
