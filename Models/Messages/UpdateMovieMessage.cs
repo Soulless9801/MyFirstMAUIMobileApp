@@ -5,7 +5,7 @@ namespace MyFirstMAUIMobileApp.Models.Messages
 {
     public class UpdateMovieMessage : ValueChangedMessage<(MarvelMovies oldMovie, MarvelMovies newMovie)>
     {
-        public UpdateMovieMessage((MarvelMovies oldMovie, MarvelMovies newMovie) movies) : base(movies) { }
+        public UpdateMovieMessage(MarvelMovies oldMovie, MarvelMovies newMovie) : base((oldMovie, newMovie)) { }
 
         public MarvelMovies OldMovie => Value.oldMovie;
 

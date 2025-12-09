@@ -9,10 +9,10 @@ using System.Collections.ObjectModel;
 
 namespace MyFirstMAUIMobileApp.ViewModels
 {
-    public partial class CollectionButtonsViewModel : ObservableObject
+    public partial class CollectionMovieUpdateableViewModel : ObservableObject
     {
 
-        public string Title => TitleCollectionButtons.Title;
+        public string Title => TitleCollectionMovieUpdateable.Title;
 
         [ObservableProperty]
         private bool isBusy;
@@ -58,12 +58,12 @@ namespace MyFirstMAUIMobileApp.ViewModels
         }
 
         [RelayCommand]
-        private async Task DeleteMovie(MarvelMovies movie)
+        private void DeleteMovie(MarvelMovies movie)
         {
             MovieCollection.Remove(movie);
         }
 
-        public CollectionButtonsViewModel()
+        public CollectionMovieUpdateableViewModel()
         {
             WeakReferenceMessenger.Default.Register<UpdateMovieMessage>(this, (r, m) =>
             {

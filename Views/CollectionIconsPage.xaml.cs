@@ -4,10 +4,10 @@ namespace MyFirstMAUIMobileApp.Views;
 
 public partial class CollectionIconsPage : ContentPage
 {
-	public CollectionIconsPage()
-	{
-		InitializeComponent();
+    public CollectionIconsPage(CollectionMovieUpdateableViewModel vm)
+    {
+        InitializeComponent();
 
-		BindingContext = new CollectionIconsViewModel();
+        BindingContext = vm;
     }
 }

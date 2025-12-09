@@ -25,8 +25,9 @@ namespace MyFirstMAUIMobileApp
 
             try
             {
-                builder.Services.AddSingleton<CollectionButtonsViewModel>();
+                builder.Services.AddSingleton<CollectionMovieUpdateableViewModel>();
                 builder.Services.AddSingleton<CollectionButtonsPage>();
+                builder.Services.AddSingleton<CollectionIconsPage>();
             }
             catch (Exception ex)
             {

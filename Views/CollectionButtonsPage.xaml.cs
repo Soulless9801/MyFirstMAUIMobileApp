@@ -4,7 +4,7 @@ namespace MyFirstMAUIMobileApp.Views;
 
 public partial class CollectionButtonsPage : ContentPage
 {
-	public CollectionButtonsPage(CollectionButtonsViewModel vm)
+	public CollectionButtonsPage(CollectionMovieUpdateableViewModel vm)
 	{
 		InitializeComponent();
 

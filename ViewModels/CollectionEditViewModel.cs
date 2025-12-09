@@ -1,4 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
 using MyFirstMAUIMobileApp.Models.Entities;
 using MyFirstMAUIMobileApp.Models.Messages;
@@ -6,6 +7,7 @@ using MyFirstMAUIMobileApp.Models.Titles;
 
 namespace MyFirstMAUIMobileApp.ViewModels
 {
+    [QueryProperty(nameof(MovieName), "movieName")]
     public partial class CollectionEditViewModel : ObservableObject
     {
 
@@ -18,12 +20,13 @@ namespace MyFirstMAUIMobileApp.ViewModels
 
         partial void OnMovieNameChanged(string value)
         {
-            if (_originalMovieName == null)
+            if (_originalMovieName is null)
             {
                 _originalMovieName = value;
             }
         }
 
+        [RelayCommand]
         private async Task EditButtonClicked()
         {
             if (string.IsNullOrWhiteSpace(MovieName))
@@ -39,7 +42,7 @@ namespace MyFirstMAUIMobileApp.ViewModels
             var oldMovie = new MarvelMovies(_originalMovieName);
             var newMovie = new MarvelMovies(MovieName);
 
-            WeakReferenceMessenger.Default.Send(new UpdateMovieMessage((oldMovie, newMovie)));
+            WeakReferenceMessenger.Default.Send(new UpdateMovieMessage(oldMovie, newMovie));
             await Shell.Current.GoToAsync("..");
         }
     }
