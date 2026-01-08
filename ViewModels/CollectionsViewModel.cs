@@ -7,7 +7,6 @@ namespace MyFirstMAUIMobileApp.ViewModels
 {
     public partial class CollectionsViewModel : ObservableObject
     {
-
         public string Title => TitleCollections.Title;
 
         public string CollectionButtonText => TitleCollections.CollectionButtonText;

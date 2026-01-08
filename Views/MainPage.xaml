@@ -43,7 +43,8 @@
             <Button Grid.Row="1" 
                     Grid.Column="1"
                     Text="{Binding ControlsButtonText}" 
-                    Style="{StaticResource ButtonMain}" />
+                    Style="{StaticResource ButtonMain}" 
+                    Command="{Binding ControlsButtonClickedCommand}" />
 
             <Button Grid.Row="2" 
                     Grid.ColumnSpan="2"
