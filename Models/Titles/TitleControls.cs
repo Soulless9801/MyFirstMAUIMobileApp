@@ -2,7 +2,7 @@
 {
     public static class TitleControls
     {
-        public static string Title { get; } = "Controls Page";
+        public static string Title { get; } = "Controls Menu";
 
         public static string ControlSliderButtonText { get; } = "Slider";
 

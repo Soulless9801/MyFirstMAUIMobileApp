@@ -24,13 +24,13 @@ namespace MyFirstMAUIMobileApp.ViewModels
         [RelayCommand]
         private async Task ControlStepperButtonClicked()
         {
-            await Shell.Current.GoToAsync(nameof(ControlStepperPage));
+            await Shell.Current.GoToAsync(nameof(ControlSteppersPage));
         }
 
         [RelayCommand]
         private async Task ControlSwitchButtonClicked()
         {
-            await Shell.Current.GoToAsync(nameof(ControlSwitchPage));
+            await Shell.Current.GoToAsync(nameof(ControlSwitchesPage));
         }
 
         public ControlsViewModel()
