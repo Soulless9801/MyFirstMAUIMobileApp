@@ -15,6 +15,8 @@ namespace MyFirstMAUIMobileApp.ViewModels
 
         public string ControlSwitchButtonText => TitleControls.ControlSwitchButtonText;
 
+        public string ControlEntryButtonText => TitleControls.ControlEntryButtonText;
+
         [RelayCommand]
         private async Task ControlSliderButtonClicked()
         {
@@ -31,6 +33,12 @@ namespace MyFirstMAUIMobileApp.ViewModels
         private async Task ControlSwitchButtonClicked()
         {
             await Shell.Current.GoToAsync(nameof(ControlSwitchesPage));
+        }
+
+        [RelayCommand]
+        private async Task ControlEntryButtonClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(ControlEntriesPage));
         }
 
         public ControlsViewModel()

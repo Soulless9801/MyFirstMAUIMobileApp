@@ -49,6 +49,11 @@ namespace MyFirstMAUIMobileApp
             Routing.RegisterRoute(nameof(ControlSwitchesPage), typeof(ControlSwitchesPage));
             Routing.RegisterRoute(nameof(ControlSwitchXAMLPage), typeof(ControlSwitchXAMLPage));
             Routing.RegisterRoute(nameof(ControlSwitchVMPage), typeof(ControlSwitchVMPage));
+
+            Routing.RegisterRoute(nameof(ControlEntriesPage), typeof(ControlEntriesPage));
+            Routing.RegisterRoute(nameof(ControlEntryXAMLPage), typeof(ControlEntryXAMLPage));
+            Routing.RegisterRoute(nameof(ControlEntryVMPage), typeof(ControlEntryVMPage));
+            Routing.RegisterRoute(nameof(ControlEntryResultPage), typeof(ControlEntryResultPage));
         }
     }
 }

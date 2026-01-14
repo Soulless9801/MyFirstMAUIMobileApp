@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyFirstMAUIMobileApp.Views.ControlsPage"
+             x:Class="MyFirstMAUIMobileApp.Views.ControlEntriesPage"
              Title="{Binding Title}">
-    
+
+
     <ContentPage.Resources>
         <Style TargetType="Button">
-            <Setter Property="BackgroundColor" Value="MidnightBlue"/>
+            <Setter Property="BackgroundColor" Value="CornflowerBlue"/>
             <Setter Property="TextColor" Value="White"/>
             <Setter Property="FontAttributes" Value="Bold"/>
             <Setter Property="CornerRadius" Value="20"/>
@@ -16,15 +17,13 @@
     </ContentPage.Resources>
 
     <VerticalStackLayout Padding="24,16" 
-                     Spacing="24">
+                         Spacing="24">
 
         <Grid RowSpacing="20"
-          ColumnSpacing="20"
-          Padding="0">
+              ColumnSpacing="20"
+              Padding="0">
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
@@ -35,23 +34,13 @@
 
             <Button Grid.Row="0" 
                     Grid.Column="0" 
-                    Text="{Binding ControlSliderButtonText}"
-                    Command="{Binding ControlSliderButtonClickedCommand}" />
+                    Text="{Binding EntryVMButtonText}"
+                    Command="{Binding EntryVMButtonClickedCommand}" />
 
             <Button Grid.Row="0" 
                     Grid.Column="1"
-                    Text="{Binding ControlStepperButtonText}"
-                    Command="{Binding ControlStepperButtonClickedCommand}" />
-
-            <Button Grid.Row="1" 
-                    Grid.Column="0"
-                    Text="{Binding ControlSwitchButtonText}"
-                    Command="{Binding ControlSwitchButtonClickedCommand}" />    
-
-            <Button Grid.Row="1" 
-                    Grid.Column="1"
-                    Text="{Binding ControlEntryButtonText}"
-                    Command="{Binding ControlEntryButtonClickedCommand}" />
+                    Text="{Binding EntryXAMLButtonText}"
+                    Command="{Binding EntryXAMLButtonClickedCommand}" />
 
         </Grid>
     </VerticalStackLayout>

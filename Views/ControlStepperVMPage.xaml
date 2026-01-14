@@ -32,7 +32,7 @@
 
             <Stepper x:Name="stepper"
                      Minimum="0"
-                     Maximum="360"
+                     Maximum="180"
                      Increment="10"
                      Value="{Binding StepperValue, Mode=TwoWay}"
                      WidthRequest="300"

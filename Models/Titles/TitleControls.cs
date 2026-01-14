@@ -10,5 +10,7 @@
 
         public static string ControlSwitchButtonText { get; } = "Switch";
 
+        public static string ControlEntryButtonText { get; } = "Entry";
+
     }
 }
